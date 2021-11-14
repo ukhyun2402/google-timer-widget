@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "deploy": "electron-builder --windows nsis:ia32"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +18,36 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^15.3.1"
+    "electron": "^15.3.1",
+    "electron-builder": "^22.13.1",
+    "electron-log": "^4.4.1",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "build": {
+    "productName": "GoogleTimer",
+    "appId": "com.ukhyun.googleTimer",
+    "asar": true,
+    "protocols": {
+      "name": "googleTimer",
+      "schemes": [
+        "googletimer"
+      ]
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "buildResources": "./resources/installer/",
+      "output": "./dist/",
+      "app": "."
+    }
   }
 }

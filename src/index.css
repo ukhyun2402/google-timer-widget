@@ -1,0 +1,67 @@
+*{
+    color: white;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    -webkit-app-region: drag;
+    user-select: none;
+}
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 13px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+}
+
+#util-buttons {
+    display: flex;
+    -webkit-app-region: no-drag;
+    color: white;
+    font-size: 20px;
+    padding: 0 5px;
+    align-self: flex-end;
+}
+
+#util-buttons > div {
+    margin: 0 10px;
+}
+
+#util-buttons div:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#time {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+button{
+    -webkit-app-region: drag;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+#button > button {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+}
+
+.left-1min{
+    color: rgb(241, 100, 100);
+}
+
+.refresh-time{
+    color: yellowgreen;
+}
