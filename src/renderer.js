@@ -11,7 +11,7 @@ const RELOAD_BTN = document.querySelector("#reload-button");
 const BUTTON_WRAP = document.getElementById("button");
 const TIME = document.getElementById("time");
 
-var sec = 3000;
+var sec = 100;
 
 var startFlag = true;
 var studyFlag = true;

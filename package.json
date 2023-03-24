@@ -7,7 +7,10 @@
     "start": "electron .",
     "deploy": "electron-builder --windows nsis:ia32"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
   "keywords": [
     "Electron",
     "quick",
@@ -18,8 +21,8 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^19.0.7",
-    "electron-builder": "^22.13.1",
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0",
     "electron-log": "^4.4.1",
     "electron-reload": "^2.0.0-alpha.1"
   },
@@ -49,5 +52,9 @@
       "output": "./dist/",
       "app": "."
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme"
 }
