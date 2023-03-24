@@ -23,7 +23,7 @@
   "devDependencies": {
     "electron": "^23.2.0",
     "electron-builder": "^23.6.0",
-    "electron-log": "^4.4.1",
+    "electron-log": "^4.4.8",
     "electron-reload": "^2.0.0-alpha.1"
   },
   "build": {
